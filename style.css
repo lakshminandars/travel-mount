@@ -1,0 +1,403 @@
+.parallax {
+    background-image: url('https://cdn.pixabay.com/photo/2020/10/05/07/29/woman-5628426_960_720.jpg'); 
+    height: 750px;
+    width: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax h2{
+    color: rgb(79, 70, 70);
+    text-shadow: 2px 4px 6px bisque;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+}
+.parallax h2:hover{
+    color: black;
+}
+
+/* banner */
+
+
+.overlay h1 {
+    position: absolute;
+    top: 45px;
+    margin-left:320px ;
+    color: rgb(72, 62, 62);
+    font-family: "Teko", sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+}
+.overlay h6{
+    position: absolute;
+    top: 125px;
+    font-family: "Teko", sans-serif;
+    font-weight: bolder;
+    margin-left:460px ;
+    color: rgb(79, 70, 70);
+}
+.overlay img{
+    position: absolute;
+    top: 15px;
+    margin-left:170px ;
+    width: 180px;
+    height: 180px;
+}
+
+
+.btns{
+    position: absolute;
+    top: 165px;
+    margin-left:450px ;
+    width: 500px;
+   
+}
+.btns:hover{
+font-weight: 20px;
+color: white;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+
+/* -----banner closed */
+
+/* trips */
+
+
+.background {
+    /* background-image: url('https://cdn.pixabay.com/photo/2016/11/29/01/35/river-1866579_640.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0 to 1) to change opacity */
+    z-index: 1;
+}
+
+.card-container {
+    perspective: 1000px;
+    position: relative;
+    z-index: 2;
+  top: 300px;
+  left: 150px;
+}
+
+.card {
+    width: 200PX;
+    height: 200PX;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/05/22/21/beach-5264739_640.jpg');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(75, 35, 35);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+   
+    text-align: center;
+}
+
+
+
+.card-container {
+    perspective: 1000px;
+    position: relative;
+    z-index: 2;
+  top: 300px;
+  
+}
+
+.card1 {
+    width: 200PX;
+    height: 200PX;
+    left: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.card-container:hover .card1 {
+    transform: rotateY(180deg);
+}
+
+.card-front1, .card-back1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-image: url('https://cdn.pixabay.com/photo/2024/02/12/16/05/hunter-peak-8568915_640.jpg');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    color:  white;
+}
+
+.card-back1 {
+    transform: rotateY(180deg);
+    
+    text-align: center;
+}
+
+
+
+
+.card-container {
+    perspective: 1000px;
+    position: relative;
+    z-index: 2;
+  top: 300px;
+  
+}
+
+.card2 {
+    width: 200PX;
+    height: 200PX;
+    left: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.card-container:hover .card2 {
+    transform: rotateY(180deg);
+}
+
+.card-front2, .card-back2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/19/37/archaeology-2595597_640.jpg');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(75, 35, 35);
+}
+
+.card-back2 {
+    transform: rotateY(180deg);
+
+    text-align: center;
+}
+
+
+
+
+.parallax1{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/01/35/river-1866579_640.jpg'); 
+    height: 100vh;
+    width: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background-image: url('https://cdn.pixabay.com/photo/2022/09/24/13/41/horizon-7476439_1280.jpg'); 
+    height: 100vh;
+    width: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content2 h1{
+    margin-left: 550px;
+    position: absolute;
+    top: 2300px;
+    font-size: 90px;
+    color: white;
+   
+}
+
+.parallax3{
+    background-color: white;
+   
+    width: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.row3 .card {
+    background-color: rgba(31, 30, 30, 0.9);
+    color: gold;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.row3 .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.row3 .card img {
+    border-radius: 15px 15px 0 0;
+}
+
+.row3 .col-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.row3 h3 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card-text {
+    color: #ccc;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.btn2 a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-light {
+    background-color: gold;
+    color: rgb(31, 30, 30);
+    margin-right: 10px;
+}
+
+.btn-light:hover {
+    background-color: darkgoldenrod;
+}
+
+.btn {
+    background-color: gray;
+    color: white;
+}
+
+.btn:hover {
+    background-color: darkgray;
+}
+
+
+
+
+/* mountains */
+.parallax4{
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/21/09/48/hill-5324149_1280.jpg'); 
+    height: 100vh;
+    width: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content4 h1{
+    margin-left: 480px;
+    position: absolute;
+    top: 4400px;
+    font-weight: bolder;
+    font-size: 90px;
+    color: rgb(6, 61, 1);
+   text-shadow: 2PX 4PX 8PX rgb(75, 9, 9);
+}
+
+
+/* historical places */
+.parallax5{
+    background-image: url('https://cdn.pixabay.com/photo/2021/09/28/19/42/uskudar-6665402_1280.jpg'); 
+    height: 100vh;
+    width: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content5 h1{
+    margin-left: 350px;
+    position: absolute;
+    top: 6350px;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+   text-shadow: 2PX 4PX 8PX rgb(75, 9, 9);
+}
